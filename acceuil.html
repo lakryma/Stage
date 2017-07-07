@@ -6,7 +6,11 @@
         <title>Acceuil</title>
         <link rel="stylesheet" href="../css/style.css"/>
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <!-- HEADER -->
@@ -36,16 +40,64 @@
   <body>
   
    <!-- NEWS -->
-   <h1>Actualités</h1>
  
-    
-       
+    <!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/1500X500" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Bootstrap 3 Carousel Layout</h1>
+          <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.><p></p>
+          <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Lire l'article</a>
+        </p></pthis></div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1500X500" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Changes to the Grid</h1>
+          <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
+          <p><a class="btn btn-large btn-primary" href="#">Lire l'article</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1500X500" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Percentage-based sizing</h1>
+          <p>With "mobile-first" there is now only one percentage-based grid.</p>
+            <p><a class="btn btn-large btn-primary" href="#">Lire l'article</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+  
           
                 
   <!-- END NEWS -->
 
   <!-- SERVICES -->
-   <div id="down">
+   <div class="down">
        <div class="container-service">
            <div class="row">
                <h3 class="down-text">Nos services</h3>
@@ -55,7 +107,11 @@
                   <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
                   <br>
                   <h4 class="down-text">Lorem ipsum</h4>
-                  <p class="down-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales odio et finibus rhoncus. Nam dignissim urna ac eros facilisis venenatis.<br>
+                  <p class="down-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus viverra dignissim. Donec ornare dui non malesuada maximus. Nunc vel cursus leo. Mauris ut vehicula sem, a dapibus lacus. Donec ac malesuada purus. Donec faucibus ipsum at odio efficitur venenatis sed sit amet nunc. Ut odio justo, accumsan vitae mauris eget, tincidunt consequat ligula. Mauris mollis tincidunt nisi, quis mollis ligula imperdiet eget. Mauris tellus ligula, pulvinar mollis quam vel, fermentum eleifend eros. Mauris lobortis dolor sapien, et ultricies nunc pellentesque non. Sed condimentum, ligula vel varius pulvinar, metus mi fermentum mauris, non elementum velit odio id neque.
+                  
+                    <br>
+                    
+                     <a href="page-service.html"><input type="button" value="En savoir plus"></a>
                 </center>
               </div>
               
@@ -63,8 +119,12 @@
                 <center>
                   <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
                   <br>
-                  <h4 class="footertext">Lorem ipsum</h4>
-                  <p class="footertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales odio et finibus rhoncus. Nam dignissim urna ac eros facilisis venenatis.<br>
+                  <h4 class="down-text">Lorem ipsum</h4>
+                  <p class="down-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus viverra dignissim. Donec ornare dui non malesuada maximus. Nunc vel cursus leo. Mauris ut vehicula sem, a dapibus lacus. Donec ac malesuada purus. Donec faucibus ipsum at odio efficitur venenatis sed sit amet nunc. Ut odio justo, accumsan vitae mauris eget, tincidunt consequat ligula. Mauris mollis tincidunt nisi, quis mollis ligula imperdiet eget. Mauris tellus ligula, pulvinar mollis quam vel, fermentum eleifend eros. Mauris lobortis dolor sapien, et ultricies nunc pellentesque non. Sed condimentum, ligula vel varius pulvinar, metus mi fermentum mauris, non elementum velit odio id neque.
+                  
+                  <br>
+                  
+                  <a href="page-service.html"><input type="button" value="En savoir plus"></a>
                 </center>
               </div>
               
@@ -72,8 +132,12 @@
                 <center>
                   <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
                   <br>
-                  <h4 class="footertext">Lorem ipsum</h4>
-                  <p class="footertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales odio et finibus rhoncus. Nam dignissim urna ac eros facilisis venenatis.<br>
+                  <h4 class="down-text">Lorem ipsum</h4>
+                  <p class="down-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus viverra dignissim. Donec ornare dui non malesuada maximus. Nunc vel cursus leo. Mauris ut vehicula sem, a dapibus lacus. Donec ac malesuada purus. Donec faucibus ipsum at odio efficitur venenatis sed sit amet nunc. Ut odio justo, accumsan vitae mauris eget, tincidunt consequat ligula. Mauris mollis tincidunt nisi, quis mollis ligula imperdiet eget. Mauris tellus ligula, pulvinar mollis quam vel, fermentum eleifend eros. Mauris lobortis dolor sapien, et ultricies nunc pellentesque non. Sed condimentum, ligula vel varius pulvinar, metus mi fermentum mauris, non elementum velit odio id neque.
+                  
+                  <br>
+                  
+                  <a href="page-service.html"><input type="button" value="En savoir plus"></a>
                 </center>
               </div>
               
@@ -81,35 +145,13 @@
        </div>
    </div>
    <!-- END SERVICE -->
-   
-   
-   
-   
-   <!-- DIV NEWS -->
-    <!--<div class="main">
-        <div id="content">
-            <section>
-                <div class="container">
-                    <h1>Actualités</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet quam non purus vestibulum, at egestas libero dignissim. Morbi volutpat sem ante, ut mollis odio condimentum rhoncus. Vestibulum ut porttitor ante, sed luctus magna. Suspendisse potenti. Vestibulum mauris lacus, varius non ligula nec, facilisis ullamcorper neque.</p>
-                </div>
-            </section>
-        </div>
-    </div>-->
-      <!-- END NEWS -->
-      
-      
-      
-    
+       
   </body>
  <!-- END BODY -->
-  
-  
       
 <footer>
-   
     <!-- CONTACT -->
-      <section id="contact" class="content-section text-center">
+      <section contact="contact" class="content-section text-center">
           <div class="contact-section">
             <div class="container">
               
@@ -134,7 +176,9 @@
                      <textarea  class="form-control" placeholder="Message"></textarea> 
                     </div>
                     
-                    <button type="submit" class="btn btn-default">Envoyer</button>
+                      
+                      <button type="button" class="btn btn-danger">Envoyer</button>
+                    
                  
                    </form>
                 </div>
@@ -144,23 +188,23 @@
       </section>
       <!-- END CONTACT -->
 
-<div class="col-md-3">
+<div class="adresse col-md-3">
       <p class="text-footer">Adresse : <br> 
         27 bis, Avenuede la Trillade <br> 
         84 000 Avignon
     </p> 
    </div>
     
-    <div class="col-md-3">
+    <div class="tel col-md-3">
         <p class="text-footer" >Tel : <br> 04.90.86.59.91</p>
     </div>
     
-    <div class="col-md-3">
+    <div class="mail col-md-3">
         <p class="text-footer">Mail : <br> contact@avenir-84.org</p>
         
     </div>
     
-    <div class="col-md-3" id="facebook">
-        <a href="https://www.facebook.com/avenir84/"><img id="logo" src="../img/fb-icon-grey-2.png" alt="facebook"></a> 
+    <div class="facebook col-md-3">
+        <a href="https://www.facebook.com/avenir84/"><img class="logo" src="../img/fb-icon-grey-2.png" alt="facebook"></a> 
     </div>
 </footer>
