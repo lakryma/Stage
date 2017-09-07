@@ -6,13 +6,14 @@
         <title>Actualité</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     </head>
     
     <!-- HEADER -->
     <header>
       
-      <div class="container col-lg-12 col-xs-12 header-new">
+      <div class="container col-lg-12 header-new">
 
       <div class="col-lg-3">
        <a href="acceuil.html">
@@ -39,6 +40,10 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
+      
+      <li class="active title-nav">
+      <a href="accueil.html">Accueil</a>
+      </li>
       
       <li class="active">
       <a href="page-articles.html">Actualités</a>
@@ -68,49 +73,118 @@
   
   <!-- BODY -->
   <body>
-    
-    <h1 class="title-news col-md-12 col-md-12 col-xs-12">Actualité</h1>
-    <!-- ARTICLE --> 
-      <div class="container-news">
-       <div class="index-content">
-               <a href="#">
-                   <div class="col-lg-4">
-                       <div class="card ">
-                           <img src="http://cevirdikce.com/proje/hasem-2/images/finance-1.jpg">
-                               <h4>Investment Strategy</h4>
-                           
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                           <a href="actualite-1.html" class="blue-button">Lire</a>
-                       </div>
-                   </div>
-               </a>
-               
-               
-               <a href="#">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="http://cevirdikce.com/proje/hasem-2/images/finance-2.jpg">
-                        <h4>Investment Strategy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="actualite-2.html" class="blue-button">Lire</a>
-                    </div>
-                </div>
-            </a>
-               
-            <a href="#">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="http://cevirdikce.com/proje/hasem-2/images/finance-3.jpg">
-                        <h4>Investment Strategy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="actualite-3.html" class="blue-button">Lire</a>
-                    </div>
-                </div>
-            </a>      
-       </div>  
-      </div>
-    <!-- END ARTICLE -->      
+   
+<section>  
+   <div class="container-articles col-lg-12">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Actualités</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>
+        <br/>
+
+
+            <div class="products-container col-lg-12 col-md-12 col-xs-12">
+                
+                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <h4 class="product-title">Test de nouvel article avec filtre</h4>
+                <p class="description">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <button class="read"> lire l'article</button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+       
   </body>
+
+  
   <!-- END BODY -->    
   
 <!-- FOOTER -->            
@@ -139,3 +213,5 @@
    </div>
    
 </footer>
+
+<script src="../js/filtre.js"></script>
